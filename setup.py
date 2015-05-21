@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+'''
+
+'''
 
 # pyvix - Setup Script
 # Copyright 2006 David S. Rushby
@@ -93,10 +96,14 @@ for dataSubDir in ('docs', 'tests'):
 
 
 extensionModules = []
-
-includeDirs = []
+#
+#sudo ln -s /Applications/VMware\ Fusion.app/Contents/Public/libvixAllProducts.dylib /usr/lib
+#sudo cp build/lib.macosx-10.9-intel-2.7/pyvix/_vixmodule.so /Library/Python/2.7/site-packages/pyvix/_vixmodule.so
+#update this to be the path to your vmware include directory that contains vix.h
+includeDirs = ['/Applications/VMware Fusion.app/Contents/Public/include']
 libNames = []
-libDirs = []
+#TODO: update this to be the path to libvixAllProducts.* is (dylib, so, dll?)
+libDirs = ['/Applications/VMware Fusion.app/Contents/Public/']
 macroDefs = []
 extraCompilerArgs = []
 extraLinkerArgs = []

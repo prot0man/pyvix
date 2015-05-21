@@ -168,7 +168,9 @@ static PyObject *initSupport_Constants(PyObject *self, PyObject *args) {
  /****************************************************************************/
  /* VixRunProgramOptions constants: BEGIN                                    */
  /****************************************************************************/
+  SIC(VIX_LOGIN_IN_GUEST_REQUIRE_INTERACTIVE_ENVIRONMENT);
   SIC(VIX_RUNPROGRAM_RETURN_IMMEDIATELY);
+  SIC(VIX_RUNPROGRAM_ACTIVATE_WINDOW);
  /****************************************************************************/
  /* VixRunProgramOptions constants: END                                      */
  /****************************************************************************/
